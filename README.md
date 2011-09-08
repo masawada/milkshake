@@ -3,12 +3,12 @@ Milkshake - The synchronized Presentation Software
 
 Require
 -------
-Server
-* node.js 0.4.10
-* npm 1.0.22
-* git 1.7.4.4
-Client
-* Web browser(Opera, Firefox, Google Chrome, Safari)
+Server  
+* node.js 0.4.10  
+* npm 1.0.22  
+* git 1.7.4.4  
+Client  
+* Web browser(Opera, Firefox, Google Chrome, Safari)  
 
 How To Install it
 -----------------
