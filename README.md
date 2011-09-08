@@ -15,7 +15,7 @@ How To Install it
 1. `$ git clone git://github.com/masawada/milkshake.git`
 2. `$ cd milkshake`
 3. `$ npm install express socket.io jade`
-4. `$ cd node app.js`
+4. `$ node app.js`
 
 How To Write Slides
 -------------------
