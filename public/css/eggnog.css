@@ -1,0 +1,14 @@
+.en_Slide{
+position:absolute;
+top:0;
+left:0;
+width:inherit;
+height:inherit;
+overflow:hidden;
+background:#FFFFFF;
+}
+
+.en_Title, .en_Text, .en_Link, .en_Image, .en_Tag{
+display:block;
+position:absolute;
+}

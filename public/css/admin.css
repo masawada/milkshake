@@ -1,0 +1,50 @@
+*{
+margin:0;
+padding:0;
+}
+
+#main{
+width:100%;
+}
+
+#slides{
+position:relative;
+width:320px;
+height:240px;
+margin: 32px auto;
+}
+
+#console{
+list-style-type:none;
+height:48px;
+background:#F0F0F0;
+}
+
+#console li{
+float:left;
+width:50%;
+height:48px;
+overflow:hidden;
+}
+
+#prev, #next{
+display:block;
+width:100%;
+height:100%;
+color:#333333;
+font:normal 24px/48px sans-serif;
+text-align:center;
+text-decoration:none;
+}
+
+#prev:hover, #next:hover{
+background:#DDDDDD;
+}
+
+#prev:active, #next:active{
+line-height:52px;
+}
+
+#note{
+padding: 8px;
+}

@@ -1,0 +1,24 @@
+doctype 5
+html(lang='ja')
+  head
+    meta(charset='UTF-8')
+    title Admin
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    link(rel='stylesheet', href='/css/admin.css', type='text/css')
+    link(rel='stylesheet', href='/css/eggnog.css', type='text/css')	
+body
+  #main
+    #slides
+    ul#console
+      li.highlightOnTap
+        a#prev(href="#prev") Prev
+      li.highlightOnTap
+        a#next(href="#next") Next
+    p#note
+  script(type='text/javascript')
+    var seckey = '#{passkey}';
+  script(type='text/javascript', src='/js/jquery.js')
+  script(type='text/javascript', src='/socket.io/socket.io.js')
+  script(type='text/javascript', src='/js/eggnog.min.js')
+  script(type='text/javascript', src='#{slideURL}')
+  script(type='text/javascript', src='/clients/admin.js')

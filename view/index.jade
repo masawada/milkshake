@@ -1,0 +1,39 @@
+doctype 5
+html(lang='ja')
+  head
+    meta(charset='UTF-8')
+    title Untitled
+    link(rel='stylesheet', href='/css/index.css', type='text/css')
+    link(rel='stylesheet', href='/css/eggnog.css', type='text/css')	
+body
+  #login-panel
+    form#login-form
+      p#login-note ユーザ名を入力してください。
+      fieldset#username-box
+        input#username(placeholder="nickname")
+      p#login-error ユーザ名は既に使われています。
+      p#login-box
+        a#login(href="#login") Login
+  #main
+    #show
+      #view
+        #slides
+      #lists
+        #lists-view
+          ul#comments.current
+          ul#users
+        ul#lists-ctr
+          li.lists-ctr-btn
+            a#open-comments.current(href="#comments") Comments
+          li.lists-ctr-btn
+            a#open-users(href="#users") Users
+    form#message-form
+      fieldset#message-box
+        input#message(placeholder="Comment")
+      p#send-box
+        a#send(href="#send") Send
+  script(type='text/javascript', src='/js/jquery.js')
+  script(type='text/javascript', src='/socket.io/socket.io.js')
+  script(type='text/javascript', src='/js/eggnog.min.js')
+  script(type='text/javascript', src='#{slideURL}')
+  script(type='text/javascript', src='/clients/index.js')

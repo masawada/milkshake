@@ -1,0 +1,24 @@
+*{
+margin:0;
+padding:0;
+}
+
+body{
+background:#F4F4F0;
+}
+
+h1{
+padding:4px 8px;
+font:bold 24px/32px sans-serif;
+border-bottom:solid 2px #CCCCCC;
+}
+
+#log{
+list-style-type:none;
+}
+
+#log li{
+padding:8px;
+font:normal 16px/32px sans-serif;
+border-bottom:solid 1px #CCCCCC;
+}
