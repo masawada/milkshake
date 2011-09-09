@@ -2,15 +2,18 @@ var socket = io.connect();
 
 socket.on('order', function(order){
     $('#log').append($('<li></li>').text(fDate(order.date) + 'page: ' + order.page + ', block: ' + order.block));
+    $(window).scrollTop(9999999999);
 });
 
 socket.on('userinfo', function(user){
     $('#log').append($('<li></li>').text(fDate(user.date) + user.user + ' ' + user.type + '.'));
-})
+    $(window).scrollTop(9999999999);
+});
 
 socket.on('show comment', function(comment){
     $('#log').append($('<li></li>').text(fDate(comment.date) + comment.user + ': ' + comment.message));
-})
+    $(window).scrollTop(9999999999);
+});
 
 function fDate(date){
     var dd = new Date(date);
